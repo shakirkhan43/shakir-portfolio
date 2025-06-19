@@ -26,6 +26,11 @@
   <meta property="og:image" content="https://shakirkhan43.github.io/shakir-portfolio/images/og-thumbnail.jpg" />
   <meta property="og:url" content="https://shakirkhan43.github.io/shakir-portfolio/" />
   <meta property="og:type" content="website" />
+  <!-- ✅ Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- ✅ AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- ✅ Styles -->
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -38,39 +43,40 @@
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
-      <header id="header">
-        <div class="logo">
-          <span class="icon fa-diamond"></span>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <h1>Shakir Khan</h1>
-            <p>
-              I’m Shakir Khan, a passionate Frontend Developer skilled in
-              React.js. <br />
-              I love building clean, responsive, and user-friendly web
-              applications.
-            </p>
-            <p>
-              <a href="resume.pdf" target="_blank" class="button">Download Resume</a>
-            </p>
-          </div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!--<li><a href="#elements">Elements</a></li>-->
-          </ul>
-        </nav>
-      </header>
+     <header id="header" class="animate__animated animate__fadeInDown">
+  <div class="logo">
+    <span class="icon fa-diamond"></span>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h1>Shakir Khan</h1>
+      <p>
+        I’m Shakir Khan, a passionate Frontend Developer skilled in React.js. <br />
+        I love building clean, responsive, and user-friendly web applications.
+      </p>
+      <p>
+        <a href="resume.pdf" target="_blank" class="button">Download Resume</a>
+      </p>
+
+     
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!--<li><a href="#elements">Elements</a></li>-->
+    </ul>
+  </nav>
+</header>
+
 
       <!-- Main -->
       <div id="main">
         <!-- Intro -->
-        <article id="intro">
+        <article id="intro" data-aos="fade-up">
           <h2 class="major">Intro</h2>
           <span class="image main">
             <img src="images/coding.jpg" alt="Shakir Khan" />
@@ -97,13 +103,17 @@
             I’ve been learning and building projects for over a year now,
             continuously upgrading my skills. My goal is to help businesses
             build their digital presence and eventually become a full-stack
-            developer. By the way, check out my
-            <a href="#work">awesome work</a>.
-          </p>
+            developer. By the way, check out my </p>
+           
+            <p>
+              <a href="#work" class="button">See my work</a>
+            </p>
+         
+           
         </article>
 
         <!-- Work -->
-        <article id="work">
+        <article id="work"  data-aos="fade-up" data-aos-delay="100">
           <h2 class="major">Work</h2>
           <span class="image main"
             ><img src="images/coding.jpg" alt="Project Work"
@@ -148,10 +158,14 @@
               >Visit Website</a
             >
           </p>
+
+          <p>
+            <a href="#about" class="button">About Me</a>
+          </p>
         </article>
 
         <!-- About -->
-        <article id="about">
+        <article id="about"  data-aos="fade-up" data-aos-delay="200">
           <h2 class="major">About</h2>
           <span class="image main"
             ><img src="images/coding.jpg" alt="Shakir Khan"
@@ -187,10 +201,13 @@
             and create digital solutions that truly help people and businesses
             grow online.
           </p>
+          <p>
+            <a href="#contact" class="button"> Contact Me</a>
+          </p>
         </article>
 
         <!-- Contact -->
-        <article id="contact">
+        <article id="contact"  data-aos="fade-up" data-aos-delay="300">
           <h2 class="major">Contact</h2>
          <form action="https://formspree.io/f/xanjbrpr" method="POST">
           <input type="hidden" name="_redirect" value="https://shakirkhan43.github.io/shakir-portfolio/#contact" />
@@ -257,12 +274,50 @@
         </article>
       </div>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">
-          &copy; Design by : <a href="#">Shakir Khan Portfolio</a>.
-        </p>
-      </footer>
+     <!-- Footer -->
+<footer id="footer" class="animate__animated animate__fadeInUp">
+  <!-- ✅ Social Icons -->
+  <ul class="icons">
+    <li>
+      <a
+        href="https://wa.me/919171308643"
+        target="_blank"
+        class="icon fa-whatsapp"
+        ><span class="label">Whatsapp</span></a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.facebook.com/shakir.khan.640669"
+        target="_blank"
+        class="icon fa-facebook"
+        ><span class="label">Facebook</span></a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.instagram.com/shakir_.313/"
+        target="_blank"
+        class="icon fa-instagram"
+        ><span class="label">Instagram</span></a
+      >
+    </li>
+    <li>
+      <a
+        href="https://github.com/shakirkhan43"
+        target="_blank"
+        class="icon fa-github"
+        ><span class="label">GitHub</span></a
+      >
+    </li>
+  </ul>
+
+  <!-- Copyright -->
+  <p class="copyright">
+    &copy; Design by : <a href="#">Shakir Khan Portfolio</a>.
+  </p>
+</footer>
+
     </div>
 
     <!-- BG -->
@@ -274,5 +329,14 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+     <!-- ✅ AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
   </body>
 </html>
